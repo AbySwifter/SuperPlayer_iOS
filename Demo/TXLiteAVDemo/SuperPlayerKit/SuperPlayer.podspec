@@ -15,7 +15,6 @@ Pod::Spec.new do |spec|
     spec.dependency 'Masonry'
     spec.static_framework = true
     spec.default_subspec = 'Player'
-    spec.pod_target_xcconfig = { 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
     spec.ios.framework    = ['SystemConfiguration','CoreTelephony', 'VideoToolbox', 'CoreGraphics', 'AVFoundation', 'Accelerate']
     spec.ios.library = 'z', 'resolv', 'iconv', 'stdc++', 'c++', 'sqlite3'
 
